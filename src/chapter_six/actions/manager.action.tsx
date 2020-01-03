@@ -1,7 +1,6 @@
 /**
  * Created by Gene on 16/3/17.
  */
-import fetch from 'isomorphic-fetch'
 import { push } from 'react-router-redux'
 
 export const ADD_USER = 'ADD_USER';

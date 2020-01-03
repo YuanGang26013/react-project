@@ -2,8 +2,8 @@
  * Created by Gene on 16/3/16.
  */
 
-/// <reference path="../../typings/tsd.d.ts" />
 
+import * as React from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
 import * as Actions from './actions';
@@ -23,12 +23,12 @@ class IndexComponent extends React.Component<any, any> {
 
 function mapStateToProps(state) {
     return {
-        value: state.count
+        value : state.count
     }
 }
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators(Actions, dispatch);
+    return bindActionCreators(Actions as any, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(IndexComponent);

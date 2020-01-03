@@ -1,33 +1,35 @@
 module.exports = {
+    mode: "development",
     entry: {
-        'chapter_one' : './build/chapter_one/chapter_one.js',
-        'chapter_two' : './build/chapter_two/chapter_two.js',
-        'chapter_three': './build/chapter_three/chapter_three.js',
-        'chapter_four': './build/chapter_four/chapter_four.js',
-        'chapter_five': './build/chapter_five/chapter_five.js',
-        'chapter_six': './build/chapter_six/chapter_six.js',
-        'chapter_seven': './build/chapter_seven/chapter_seven.js',
-        'component': './build/component/TableViewDemo.js'
+        'chapter_one': __dirname + '/src/chapter_one/chapter_one',
+        'chapter_two': __dirname + '/src/chapter_two/chapter_two',
+        'chapter_three': __dirname + '/src/chapter_three/chapter_three',
+        'chapter_four': __dirname + '/src/chapter_four/chapter_four',
+        'chapter_five': __dirname + '/src/chapter_five/chapter_five',
+        'chapter_six': __dirname + '/src/chapter_six/chapter_six',
+        'chapter_seven': __dirname + '/src/chapter_seven/chapter_seven',
+        'component': __dirname + '/src/component/TableViewDemo'
     },
     output: {
-        path: './release/dist',
+        path: __dirname + '/dist',
         filename: '[name].build.js'
     },
     resolve: {
-        extensions: ['', '.Webpack.js', '.web.js', '.ts', '.js', '.tsx']
+        extensions: ['.Webpack.js', '.web.js', '.ts', '.js', '.tsx']
     },
     module: {
-        loaders: [
-            {test: /\.js$/, loader: 'jsx-loader?harmony'},
-            {test: /\.sass$/,loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'}
+        rules: [
+            {test: /(\.ts|\.tsx)$/, loader: "awesome-typescript-loader"},
+            {test: /\.sass$/, loader: 'style-loader!css-loader!sass-loader'}
         ]
     },
     externals: {
-        'react' : 'React',
-        'redux' : 'Redux',
-        'react-router' : 'ReactRouter',
-        'react-redux' : 'ReactRedux',
-        'redux-thunk' : 'ReduxThunk',
-        'redux-logger' : 'reduxLogger'
+        'react': 'React',
+        'react-dom': 'ReactDOM',
+        'redux': 'Redux',
+        'react-router': 'ReactRouter',
+        'react-redux': 'ReactRedux',
+        'redux-thunk': 'ReduxThunk',
+        'redux-logger': 'reduxLogger'
     }
 };

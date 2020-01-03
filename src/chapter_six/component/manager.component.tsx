@@ -2,6 +2,7 @@
  * Created by Gene on 16/3/17.
  */
 
+import * as React from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
 
@@ -39,7 +40,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators(Actions, dispatch);
+    return bindActionCreators(Actions as any, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ManagerComponent);

@@ -2,7 +2,8 @@
  * Created by Gene on 16/4/8.
  */
 
-import ReactInstance = __React.ReactInstance;
+import * as React from 'react'
+import ReactInstance = React.ReactInstance;
 
 import objectAssign = require('object-assign');
 import MKTableViewScroll from './MKTableViewScroll';
@@ -350,7 +351,7 @@ class MKTableView extends React.Component<MKTableViewProps, any> {
                 distance = Math.abs(destination - endTranslateY);
                 duration = distance / speed;
 
-                this.timer = setTimeout(() => {
+                this.timer = +setTimeout(() => {
                     this.touchEnd(event);
                 }, duration);
             } else if (destination > 0) {
@@ -358,7 +359,7 @@ class MKTableView extends React.Component<MKTableViewProps, any> {
                 distance = Math.abs(endTranslateY) + destination;
                 duration = distance / speed;
 
-                this.timer = setTimeout(() => {
+                this.timer = +setTimeout(() => {
                     this.touchEnd(event);
                 }, duration);
             }

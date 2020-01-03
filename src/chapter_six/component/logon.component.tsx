@@ -2,7 +2,7 @@
  * Created by Gene on 16/3/17.
  */
 
-import { Link } from 'react-router';
+import * as React from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
 

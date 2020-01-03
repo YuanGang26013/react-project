@@ -1,7 +1,7 @@
 /**
  * Created by Gene on 16/3/16.
  */
-
+import * as React from 'react'
 import { Provider } from 'react-redux';
 import { createStore } from 'redux'
 

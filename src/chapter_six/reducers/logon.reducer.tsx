@@ -2,7 +2,6 @@
  * Created by Gene on 16/3/17.
  */
 
-/// <reference path="../../../typings/tsd.d.ts" />
 
 
 import objectAssign = require("object-assign");

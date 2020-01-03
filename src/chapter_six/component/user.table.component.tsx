@@ -2,6 +2,7 @@
  * Created by Gene on 16/3/28.
  */
 
+import * as React from 'react'
 import UserTableRowComponent from './user.table.row.component';
 
 class UserTableComponent extends React.Component<any, any> {

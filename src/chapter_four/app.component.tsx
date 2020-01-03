@@ -1,15 +1,20 @@
 /**
  * Created by Gene on 16/3/14.
  */
-/// <reference path="../../typings/tsd.d.ts" />
 
-import { Link, IndexLink } from 'react-router';
+import * as React from 'react'
+import { Route } from 'react-router';
+import AboutComponent from "./about.component";
+import HomeComponent from "./home.component";
 
 import NavLink from './navlink.component';
+import RepoComponent from "./repo.component";
+import ReposComponent from "./repos.component";
 
 class AppComponent extends React.Component<any, any> {
 
     render() {
+        const {  match } = this.props;
         return (
             <div>
                 <h1>React Router Tutorial</h1>
@@ -18,7 +23,12 @@ class AppComponent extends React.Component<any, any> {
                     <li><NavLink to="/about">About</NavLink></li>
                     <li><NavLink to="/repos">Repos</NavLink></li>
                 </ul>
-                {this.props.children}
+                <div>
+                <Route exact path={`${match.url}`} component={HomeComponent}/>
+                <Route path={`${match.url}repos`} component={ReposComponent}/>
+                <Route path={`${match.url}repos/:userName/:repoName`} component={RepoComponent}/>
+                <Route path={`${match.url}about`} component={AboutComponent}/>
+                </div>
             </div>
         )
     }

@@ -2,7 +2,7 @@
  * Created by Gene on 16/3/15.
  */
 
-/// <reference path="../../typings/tsd.d.ts" />
+import * as React from 'react'
 
 class HomeComponent extends React.Component<any, any> {
     render() {

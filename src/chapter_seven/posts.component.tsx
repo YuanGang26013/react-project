@@ -1,6 +1,7 @@
 /**
  * Created by Gene on 16/3/21.
  */
+import * as React from 'react'
 
 class PostsComponent extends React.Component<any, any> {
     render() {

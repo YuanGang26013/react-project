@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 class PickerComponent extends React.Component<any,any> {
     render() {
         const { value, onChange, options } = this.props;

@@ -2,6 +2,8 @@
  * Created by Gene on 16/3/28.
  */
 
+import * as React from 'react'
+
 class UserTableRowComponent extends React.Component<any, any> {
 
     selected = () => {

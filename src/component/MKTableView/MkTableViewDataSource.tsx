@@ -1,4 +1,4 @@
-import ReactElement = __React.ReactElement;
+import ReactElement = React.ReactElement;
 
 /**
  * Created by Gene on 16/4/8.

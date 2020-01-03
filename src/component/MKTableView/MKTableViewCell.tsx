@@ -1,8 +1,8 @@
-import ReactElement = __React.ReactElement;
+
 /**
  * Created by Gene on 16/4/8.
  */
-
+import * as React from 'react'
 class MKTableViewCell extends React.Component<any, any> {
 
     initializeSubviews(): ReactElement<any> {

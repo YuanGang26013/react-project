@@ -2,6 +2,8 @@
  * Created by Gene on 16/4/12.
  */
 
+import * as React from 'react'
+
 class MKTableHeaderView extends React.Component<any, any> {
 
     initializeSubviews(): ReactElement<any> {

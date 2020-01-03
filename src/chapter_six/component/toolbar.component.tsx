@@ -2,7 +2,8 @@
  * Created by Gene on 16/3/28.
  */
 
-import { Link } from 'react-router';
+import * as React from 'react'
+import { Link } from 'react-router-dom';
 
 class ToolBarComponent extends React.Component<any, any> {
     render() {

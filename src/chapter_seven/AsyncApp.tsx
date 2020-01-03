@@ -1,3 +1,4 @@
+import * as React from 'react'
 import { connect } from 'react-redux'
 import { selectSubreddit, fetchPostsIfNeeded, invalidateSubreddit } from './actions'
 import Picker from './picker.component'

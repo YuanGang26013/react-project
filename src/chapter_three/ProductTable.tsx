@@ -2,6 +2,7 @@
  * Created by Gene on 16/3/11.
  */
 
+import * as React from 'react'
 import ProductCategoryRow from './ProductCategoryRow'
 import ProductRow from './ProductRow'
 

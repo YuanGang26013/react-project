@@ -2,8 +2,8 @@
  * Created by Gene on 16/4/8.
  */
 
+import * as React from 'react'
 import thunk from 'redux-thunk';
-import createLogger = require("redux-logger");
 import { Provider } from 'react-redux';
 import { compose, applyMiddleware, createStore } from 'redux';
 
@@ -11,11 +11,9 @@ import reducer from './MKTableView/MKTableViewReducer';
 import { MKTableView, MKTableViewCell, MKTableHeaderView, MKTableFooterView} from './MKTableView';
 import objectAssign = require("object-assign");
 
-const logger = createLogger();
 const store = createStore(reducer, compose(
     applyMiddleware(
-        thunk,
-        logger
+        thunk
     ),
     window['devToolsExtension'] ? window['devToolsExtension']() : f => f
 ));

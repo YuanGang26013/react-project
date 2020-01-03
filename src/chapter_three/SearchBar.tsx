@@ -2,6 +2,8 @@
  * Created by Gene on 16/3/11.
  */
 
+import * as React from 'react'
+
 class SearchBar extends React.Component<any, any> {
 
 

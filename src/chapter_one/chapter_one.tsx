@@ -2,7 +2,8 @@
  * Created by Gene on 16/3/11.
  */
 
-/// <reference path="../../typings/tsd.d.ts" />
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
 
 import AppComponent from './app.component'
 
