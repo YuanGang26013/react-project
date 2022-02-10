@@ -34,7 +34,7 @@
     "gulp": "^4.0.2",
     "gulp-typescript": "^6.0.0-alpha.1",
     "jsx-loader": "^0.13.2",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
 
     "redux-logger": "^3.0.6",
     "sass-loader": "^8.0.0",
